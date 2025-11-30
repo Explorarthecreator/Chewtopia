@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import { nunito } from "./font";
 import { Analytics } from "@vercel/analytics/next";
+import Footer from "@/components/shared/footer";
 
 export const metadata: Metadata = {
   title: "Chewtopia",
@@ -20,6 +21,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`antialiased bg-white ${nunito.className}`}>
         {children}
+        <Footer />
         <Analytics />
       </body>
     </html>
