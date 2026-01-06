@@ -40,11 +40,9 @@ const Flavor = () => {
     },
   ];
   return (
-    <div className="max-w-[1224px] m-auto space-y-7 lg:space-y-15  px-3 lg:px-0">
+    <div className="max-w-[1224px] m-auto space-y-7 lg:space-y-15  px-6 lg:px-0">
       <div className="text-center space-y-3 lg:space-y-6 ">
-        <h1
-          className={`font-bold text-4xl md:text-5xl lg:text-[80px]  ${baloo.className}`}
-        >
+        <h1 className={`font-bold text-5xl lg:text-[80px]  ${baloo.className}`}>
           Enjoy the Burst of{" "}
           <span className="bg-linear-to-r from-[#E58C21] via-[#96560C]  to-[#B7410E] bg-clip-text text-transparent">
             {" "}

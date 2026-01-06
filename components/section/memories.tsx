@@ -3,8 +3,8 @@ import MemoriesCarousel from "../memories-carousel";
 
 const Memories = () => {
   return (
-    <div className="space-y-7 lg:space-y-15  px-3 lg:px-0">
-      <div className="max-w-[1224px] m-auto ">
+    <div className="space-y-7 lg:space-y-15 ">
+      <div className="max-w-[1224px] m-auto  px-6 lg:px-0 ">
         <div className="text-center space-y-3 lg:space-y-6 max-w-[762px] m-auto">
           <h1
             className={`font-bold text-4xl md:text-5xl lg:text-[80px]  ${baloo.className}`}
