@@ -8,20 +8,12 @@ function MainSliderCard({ index }: { index: number }) {
   return (
     <Card className=" w-3xs lg:w-[405px] h-56 lg:h-[495px] p-0 overflow-clip">
       <CardContent className="p-0">
-        {/* <Image
-          src={`/mint-bg.png`}
-          alt="image"
-          width={1000}
-          height={1000}
-          className="w-full h-full"
-        /> */}
         <video
           width="320"
           height="240"
           preload="auto"
           autoPlay
           loop
-          //   controls
           playsInline
           muted
           className="w-full h-full object-cover"
