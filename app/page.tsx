@@ -1,20 +1,20 @@
-import Image from "next/image";
+import FlavorCarousel from "@/components/flavor-carousel";
+import Distributor from "@/components/section/distributor";
+import Flavor from "@/components/section/flavor";
+import Header from "@/components/section/header";
+import Memories from "@/components/section/memories";
 
 export default function Home() {
   return (
-    <div className="h-screen flex items-center justify-center">
-      <div>
-        <Image
-          src={"logo.svg"}
-          alt=""
-          width={1000}
-          height={1000}
-          className="animate-bounce w-52 h-52 lg:w-80 lg:h-80 m-auto"
-        />
-        <p className="animate-pulse text-center text-2xl lg:text-5xl">
-          Chewy treat coming soon
-        </p>
-      </div>
+    <div className="">
+      <Header />
+      <FlavorCarousel />
+      <section className="py-20 lg:py-30 space-y-14 lg:space-y-24">
+        <Flavor />
+        <div></div>
+        <Memories />
+      </section>
+      <Distributor />
     </div>
   );
 }
