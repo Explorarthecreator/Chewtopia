@@ -31,16 +31,12 @@ const Flavor = () => {
       description:
         "A bold explosion of mixed berries, bursting with deep, rich, and slightly tangy flavors. 💜💥",
       imageUrl: "/berry.png",
-      bg: "#F5E6F6",
-      bgImage: "/berry-bg.jpg",
     },
     {
       title: "Spicy Island",
       description:
         "A fiery blend of exotic spices with a tropical twist, delivering heat and flavor in every crunch! 🔥🏝️🧡",
       imageUrl: "/spicy.png",
-      bg: "#FFEBC3",
-      bgImage: "/spicy-bg.jpg",
     },
   ];
   return (
@@ -94,7 +90,7 @@ const Flavor = () => {
                 className="group-hover:hidden"
               />
               <div className="relative h-[300px] hidden group-hover:flex items-center justify-center ">
-                <Button className="w-[301px] flex bg-transparent m-auto hover:bg-transparent hover:scale-110 h-12 bg-[url(/tey.svg)] bg-contain  items-center justify-center bg-no-repeat">
+                <Button className="w-[207px] hidden group-hover:flex  bg-transparent m-auto hover:bg-transparent hover:scale-110 h-16 bg-[url(/light.svg)] bg-cover  items-center justify-center bg-no-repeat">
                   Become a Distributor
                 </Button>
               </div>
@@ -107,14 +103,16 @@ const Flavor = () => {
             <div
               key={index}
               className={cn(
-                `group rounded-xl p-5  bg-center hover:text-white bg-cover bg-no-repeat hover:ease-in-out first:shrink-0 hover:transition-all hover:duration-300 lg:w-2/5 lg:last:w-3/5`,
+                `group rounded-xl relative p-5  bg-center hover:text-white bg-cover bg-no-repeat hover:ease-in-out first:shrink-0 hover:transition-all hover:duration-300 lg:w-2/5 lg:last:w-3/5`,
                 flavor.title.includes("Berry") &&
                   "bg-[#F5E6F6] hover:bg-[url(/berry-bg.jpg)]",
                 flavor.title.includes("Spicy") &&
                   "bg-[#FFEBC3] hover:bg-[url(/spicy-bg.jpg)]"
               )}
             >
-              <div className="">
+              <div className="group-hover:block absolute hidden inset-0 bg-black opacity-40"></div>
+
+              <div className="relative">
                 <h1 className={`${baloo.className} text-[32px] font-bold`}>
                   {flavor.title}
                 </h1>
@@ -123,7 +121,7 @@ const Flavor = () => {
                 </p>
               </div>
 
-              <div className="h-[300px] group-hover:flex items-center justify-center">
+              <div className="h-[300px] group-hover:flex items-center justify-center relative">
                 <Image
                   src={flavor.imageUrl}
                   width={1000}
@@ -132,7 +130,7 @@ const Flavor = () => {
                   className="group-hover:hidden h-full object-contain"
                 />
 
-                <Button className="w-[301px] hidden group-hover:flex  bg-transparent m-auto hover:bg-transparent hover:scale-110 h-12 bg-[url(/tey.svg)] bg-contain  items-center justify-center bg-no-repeat">
+                <Button className="w-[207px] hidden group-hover:flex  bg-transparent m-auto hover:bg-transparent hover:scale-110 h-16 bg-[url(/light.svg)] bg-cover  items-center justify-center bg-no-repeat">
                   Become a Distributor
                 </Button>
               </div>
