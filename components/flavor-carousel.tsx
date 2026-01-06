@@ -8,7 +8,7 @@ const CarouselItems = ({ flavor }: { flavor: string }) => {
   return (
     <div className="flex items-center gap-6">
       <Image
-        src={"/star.svg"}
+        src={"/Star.svg"}
         alt=""
         width={400}
         height={400}
