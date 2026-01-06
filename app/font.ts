@@ -1,4 +1,4 @@
-import { Baloo_2, Nunito } from "next/font/google";
+import { Akaya_Kanadaka, Baloo_2, Nunito } from "next/font/google";
 
 export const nunito = Nunito({
   subsets: ["latin"],
@@ -8,4 +8,10 @@ export const nunito = Nunito({
 export const baloo = Baloo_2({
   subsets: ["latin"],
   style: "normal",
+});
+
+export const akaya = Akaya_Kanadaka({
+  subsets: ["latin"],
+  style: "normal",
+  weight: "400",
 });

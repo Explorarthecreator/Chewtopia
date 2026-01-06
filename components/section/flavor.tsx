@@ -42,14 +42,20 @@ const Flavor = () => {
   return (
     <div className="max-w-[1224px] m-auto space-y-7 lg:space-y-15  px-6 lg:px-0">
       <div className="text-center space-y-3 lg:space-y-6 ">
-        <h1 className={`font-bold text-5xl lg:text-[80px]  ${baloo.className}`}>
+        <h1
+          className={`font-bold text-5xl lg:text-[80px]  ${baloo.className}`}
+          data-aos="fade-down"
+        >
           Enjoy the Burst of{" "}
           <span className="bg-linear-to-r from-[#E58C21] via-[#96560C]  to-[#B7410E] bg-clip-text text-transparent">
             {" "}
             Flavors
           </span>
         </h1>
-        <p className="max-w-[674px] m-auto text-xl md:text-2xl lg:text-[32px] text-[#2B2B2B]">
+        <p
+          className="max-w-[674px] m-auto text-xl md:text-2xl lg:text-[32px] text-[#2B2B2B]"
+          data-aos="fade-up"
+        >
           Each bite is an explosion of bold, exciting flavors! From sweet to
           spicy, there&apos;s a taste adventure waiting for you.
         </p>
@@ -68,6 +74,7 @@ const Flavor = () => {
                 flavor.title.includes("Blast") &&
                   "bg-[#C3E2FF] hover:bg-[url(/blast-bg.png)]"
               )}
+              data-aos="fade-right"
             >
               <div className="group-hover:block absolute hidden inset-0 bg-black opacity-40"></div>
 
@@ -100,6 +107,7 @@ const Flavor = () => {
           {doubleFlavor.map((flavor, index) => (
             <div
               key={index}
+              data-aos={index === 0 ? "fade-left" : "fade-right"}
               className={cn(
                 `group rounded-xl relative p-5  bg-center hover:text-white bg-cover bg-no-repeat hover:ease-in-out first:shrink-0 hover:transition-all hover:duration-300 lg:w-2/5 lg:last:w-3/5`,
                 flavor.title.includes("Berry") &&
@@ -132,10 +140,6 @@ const Flavor = () => {
                   Become a Distributor
                 </Button>
               </div>
-
-              {/* <div className="h-[300px]   ">
-                
-              </div> */}
             </div>
           ))}
         </div>

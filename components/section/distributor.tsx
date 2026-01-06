@@ -9,18 +9,19 @@ const Distributor = () => {
       <div className="relative space-y-14">
         <div className="max-w-2xl px-3 md:px-0 lg:max-w-3xl m-auto space-y-6">
           <h1
+            data-aos="fade-down"
             className={`${baloo.className} font-bold text-4xl md:text-5xl lg:text-[80px]`}
           >
             Become a Distributor
           </h1>
-          <p className="text-xl md:text-2xl lg:text-[32px]">
+          <p data-aos="fade-up" className="text-xl md:text-2xl lg:text-[32px]">
             Join the Chewtopia family and bring the joy of snacking to more
             people! Partner with us for exciting opportunities and great
             rewards.
           </p>
         </div>
         <div></div>
-        <div className=" text-center h-auto ">
+        <div className=" text-center h-auto " data-aos="zoom-in">
           <Image
             src={"/distributor.png"}
             width={1000}
